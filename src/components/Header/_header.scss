@@ -1,0 +1,163 @@
+.header{
+    .brand{
+        font-family: 'Pacifico', cursive;
+        height: inherit;
+        width: 237px;
+        img{
+            width: auto;
+            height: inherit;
+        }
+    }
+    & >:nth-child(1){
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: center;
+        padding: 0rem;
+        height: inherit;
+    }
+
+    .dropdown-menu{
+        position: absolute;
+        transform: translate3d(0px, 16px, 0px);
+        top: 0px;
+        left: 0px;
+        will-change: transform;
+    }
+
+    .notification-body{
+        position: relative;
+        > .scroll-content{
+            height: auto;
+            margin-bottom: 0px;
+            margin-right: 0px;
+            max-height: 343px;
+        }
+    }
+
+    .scroll-bar{
+        width: 96px;
+    }
+    
+    .notification-list {
+        font-size:1.5rem;
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        padding: 0rem 1rem !important;
+        li{
+            padding:0rem;
+            margin:0rem;
+            .dropdown{
+                height: inherit;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+            }
+            .btn{
+                border: none;
+                padding: 6px 12px;
+                &:focus{
+                    background-color:transparent;
+                }
+                &:active{
+                    background-color:transparent;
+                }
+                &:hover{
+                    background-color:transparent;
+                }
+            }
+        }
+        .dropdown-content{
+            width:15rem !important;
+            padding:1rem;
+            li{
+                height: auto;
+                max-height: 15px;
+                a{
+                    height:auto;
+                    width:100%;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                }
+            }
+        }
+        .notifications-drop{
+            .dropdown-content{
+                width:25rem !important;
+                padding:0rem;
+                height:21.5rem !important;
+                .scroll-wrapper{
+                    .notification-body{
+                        overflow-y: scroll;
+                        overflow-x: none;
+                        position:relative;
+                    }
+                }
+                .notification-item{
+                    width:94%;
+                    height:auto;
+                    min-height:60px;
+                    .heading{
+                        display:flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-content: center;
+                        flex-wrap: wrap;
+                        &.open{
+                            & > :nth-child(1){
+                                width:60%;
+                            }
+                            & > :nth-child(2){
+                                width:40%;
+                            }
+                            & > :nth-child(3){
+                                width:100%;
+                            }
+                            .fa-map-marker{
+                                font-size:2rem;
+                                flex-grow:0;
+                            }
+                        }
+
+                        .text-danger{
+                            display:flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            align-content: center;
+                            align-items: center;
+                            width:80%;
+                        }
+
+                        .text-warning-dark{
+                            display:flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            align-content: center;
+                            align-items: center;
+                            width:80%;
+                        }
+                    }
+                    .text-complete{
+                        display:flex;
+                        flex-direction:row;
+                        justify-content: flex-start;
+                        align-content: center;
+                        span{
+                            flex-grow:1;
+                        }
+                    }
+                }
+                .opendetail{
+                    height:225px !important;
+                    padding-top:1rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+// Color functions
+@import "./utils/sass/pagetheme/scss/color";
+@import './_variableApp';
+
+@import './utils/sass/pagetheme/scss/pages.scss';
+@import './utils/sass/pagetheme/scss/themes/vibes/vibes.scss';
+@import './utils/sass/font-awesome/scss/font-awesome.scss';
+
+@import './_App';
+@import './components/DragandDrop/_draganddrop';
+@import './components/NavContainer/_navContainer';
+@import './components/BuildComponent/_build';
+@import './components/Header/_header';
